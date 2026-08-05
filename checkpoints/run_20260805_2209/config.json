@@ -1,0 +1,15 @@
+{
+  "model": "LNL_Ti",
+  "epochs": 15,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "lr": 0.0005,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR",
+  "max_lr": 0.001,
+  "pct_start": 0.3,
+  "label_smoothing": 0.05,
+  "grad_clip": 1.0,
+  "normalize": "imagenet",
+  "sampler": "WeightedRandomSampler(1/sqrt(count))"
+}
